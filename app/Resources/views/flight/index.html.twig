@@ -21,6 +21,7 @@
                 <td><a href="{{ path('flight_show', { 'id': flight.id }) }}">{{ flight.id }}</a></td>
                 <td>{{ flight.departure }}</td>
                 <td>{{ flight.arrival }}</td>
+                <td>{{ flight.plane }}</td>
                 <td>{{ flight.pilot }}</td>
                 <td>{{ flight.freeSeats }}</td>
                 <td>{% if flight.takeofTime %}{{ flight.takeofTime|date('Y-m-d H:i:s') }}{% endif %}</td>
